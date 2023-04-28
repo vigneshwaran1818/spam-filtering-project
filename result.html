@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spam Classification - Result</title>
+  </head>
+  <body>
+    <h1>Spam Classification - Result</h1>
+    {% if prediction == 1 %}
+    <p style="color:red;font-size:20px;">This is a Spam Message!</p>
+    {% else %}
+    <p style="color:green;font-size:20px;">This is a Ham Message!</p>
+    {% endif %}
+  </body>
+</html>

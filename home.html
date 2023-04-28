@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spam Classification</title>
+    <link rel="stylesheet" href="static/style.css">
+  </head>
+  <body style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('static/spam.jpeg');">
+    <h1>Spam Classification</h1>
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <form action="{{ url_for('predict') }}" method="POST">
+      <label for="comment">Enter your message:</label><br>
+      <textarea id="comment" name="comment" rows="8" cols="50"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+    <img src="relative-image.jpg" class="relative-img">
+  </body>
+</html>
